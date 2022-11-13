@@ -7,13 +7,13 @@
 }
 
 h2, h3 {
-    font-size: 27px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-family: 'Special Elite', cursive;
 }
 
 p {
-    font-size: 16px;
-    font-family: 'Helvetica neue', sans-serif;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
 }
 
 
@@ -77,28 +77,77 @@ a:hover {
   
 
 a:active {
-    color: darkred;
-  }
+    color: rgba(194, 49, 49);
+}
 
+.intro {
+    width: 50%;
+    background-color:  rgba(15, 6, 6, 0.7);
+    margin: 0 auto;
+   
+}
+
+.intro-text {
+    color: white; 
+    font-size: 20px;
+    text-align: center;
+    padding-top: 4rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.cta {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 3rem;
+    margin-top: 100px;
+  
+    
+}
+
+#cta-button {
+    background-color: white;
+    color: rgba(194, 49, 49);
+    padding: 0 2rem;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-family: 'Mr Dafoe';
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+  
+    
+} 
+
+#cta-button:hover {
+    background-color: rgba(194, 49, 49);
+    color: black;
+    
+}
+
+
+.blogg-links {
+    display: flex;
+    color: white;
 
 }
+
+
 
 .footer-container {
     background-color: black;
     width: 100%;
-    height: auto;
     color: white;
-    padding: 3rem;
-    
-   
 }
 
 .footer-content {
    display: flex;
    flex-direction: row;
    width: 100%;
-    margin: 0 auto;
-    border-top: 2px solid white;
+   margin: 0 auto;
+   border-top: 2px solid white;
+   list-style: none;
  
 }
 
