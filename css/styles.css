@@ -1,16 +1,10 @@
-body {
+ body {
     background-color: black;
     display: grid;
-     background-image: url("/images/background.jpg");
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
-
-img {
-    max-width: 100%;
-}
-
 
 h2, h3 {
     font-size: 27px;
@@ -18,10 +12,9 @@ h2, h3 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Helvetica neue', sans-serif;
 }
-
 
 
 .nav-container {
@@ -31,30 +24,30 @@ p {
 }
 
 .main-nav {
-    
-   
 }
 
 .main-nav-list {
-    font-size: 1rem;
+    font-size: 1,5rem;
     text-decoration: none;
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
     list-style: none;
+    margin: 0 auto;
 }
+
 
 .main-nav-item {
     Padding: 0 2rem ; 
     margin: 0 auto;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 10%;
     border-bottom: 10px solid rgba(194, 49, 49, 0.3) ;
     
 }
 
 .logo {
-    width: 35%;
+    width: 40%;
     max-width: 300px;
     min-width: 150px;
     padding: 1rem;
@@ -65,6 +58,7 @@ p {
     display: flex;
    
 }
+
 
 a:link {
     color:white;
@@ -87,51 +81,64 @@ a:active {
   }
 
 
-.intro {
-    width: 50%;
-    max-width: 800px;
-    background-color:  rgba(15, 6, 6, 0.7) ;
-    margin: 0 auto;
-
 }
-
-.intro-text {
-    padding: 4rem;
-    color: white; 
-    font-size: 25px;
-    text-align: center;
-}
-
-.cta-button {
-    background-color: white;
-    
-}
-
-
-
 
 .footer-container {
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 3rem;
     
-
+   
 }
 
 .footer-content {
-    display: flex;
-    
-    
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid white;
+ 
+}
+
+#footer-content-item {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 2rem;
+    padding: 3rem;
+    text-decoration: none;
+    border-left: 2px solid white;
+    margin: 0 auto;
 }
 
 .footer-content-item {
     font-family: 'Mr Dafoe', cursive;
-
+    font-size: 2rem;
+    padding: 3rem;
+    text-decoration: none;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    
 }
 
- @media only screen and (max-width: 767px) { body 
+ 
+
+@media only screen and (max-width: 767px) { body 
     {  background-image: url(/images/background-mobile.jpg); }
  }
 
+ @media only screen and(max-width:767px) {
+    label {
+        display: block;
+        cursor:pointer;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        border-bottom: 1 px #404040;
+    }
+}
