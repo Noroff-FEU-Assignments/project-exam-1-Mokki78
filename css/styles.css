@@ -1,7 +1,7 @@
  body {
     background-color: black;
     display: grid;
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/desktop/background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -171,10 +171,24 @@ a:active {
     
 }
 
+/* Blog */
+
+.blogg-links {
+    display: flex;
+    
+}
+
+.link-items {
+    justify-content: space-between;
+
+}
+
+
+
  
 
 @media only screen and (max-width: 767px) { body 
-    {  background-image: url(/images/background-mobile.jpg); }
+    {  background-image: url(/images/mobile/background-mobile.jpg); }
  }
 
  @media only screen and(max-width:767px) {
