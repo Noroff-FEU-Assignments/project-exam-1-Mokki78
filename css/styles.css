@@ -1,6 +1,6 @@
  body {
-    background-color: black;
     display: grid;
+    background-color: black;
     background-image: url("/images/desktop/background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,10 +16,14 @@ p {
     font-family: 'Special Elite', cursive;
 }
 
+img {
+    width: 100%
+}
 
 .nav-container {
     border: 2px solid white;
     background-color:  rgba(15, 6, 6, 0.5) ;
+    
    
 }
 
@@ -84,6 +88,7 @@ a:active {
     width: 50%;
     background-color:  rgba(15, 6, 6, 0.7);
     margin: 0 auto;
+    
    
 }
 
@@ -91,9 +96,8 @@ a:active {
     color: white; 
     font-size: 20px;
     text-align: center;
-    padding-top: 4rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding: 0 6rem;
+    
 }
 
 .cta {
@@ -102,8 +106,6 @@ a:active {
     display: flex;
     padding-top: 3rem;
     margin-top: 100px;
-  
-    
 }
 
 #cta-button {
@@ -115,13 +117,12 @@ a:active {
     font-family: 'Mr Dafoe';
     transition-duration: 0.4s;
     cursor: pointer;
-    
-  
-    
+    margin: 0 auto;
+    border-radius: 5px;
 } 
 
 #cta-button:hover {
-    background-color: rgba(194, 49, 49);
+    background-color: white;
     color: black;
     
 }
@@ -173,16 +174,268 @@ a:active {
 
 /* Blog */
 
-.blogg-links {
+.blog-container {
+    color: white;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: auto;
     display: flex;
+    gap: 20px;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 60px;
+
+}
+
+.blog-article {
+    justify-content: flex-start;
+
+
+}
+
+.blog-content {
+    opacity: 1.0;
+
+}
+
+.blog-content:hover {
+    opacity: 0.5;
+
+}
+
+.blog-content::after {
+    opacity: 1.0;
+
+}
+
+
+.slideshow-container {
+    color: white;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    background-color: black;
+    padding: 1rem;
+   
+}
+
+.mySlides fade {
+    display: none;
+}
+
+.mySlides {
+    height: 100%;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+   
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    display: none;
+    
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  
+} 
+
+.link-items {
+    
+    opacity: 1.0;
+  
+}
+
+.link-items:hover {
+     opacity: 0.5;
+
+}
+
+.link-items::after {
+     opacity: 1.0;
+
+}
+
+/* About */
+
+.about-container {
+
+}
+
+.about-item-container {
+    display: flex;
+    background-color: black;
+    padding-bottom: 5rem;
+
+}
+
+.about-content {
+    justify-content: space-between;
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#about-content {
+    border: 3px solid white;
+    width: 50%;
+    height: 50%;
+
+}
+
+#link {
+    color: rgba(194, 49, 49);
+}
+
+#link:hover {
+    color: darkgrey;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+/* Contact form*/
+
+.form-container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 3rem;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+input[type=text], select, textarea{
+    width: 80%; 
+    padding: 12px;  
+    border: 2px solid white;
+    box-sizing: border-box; 
+    margin: 2rem;
+    resize: vertical; 
+  }
+
+.contact-container {
+      display: flex;
+      flex-direction: row;
+      background-color:  rgba(15, 6, 6, 0.7);
+}
+
+.container-items {
+    color:white;
+    align-items: flex-end;
     
 }
 
-.link-items {
-    justify-content: space-between;
+.contact {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      justify-content: space-between;
+      gap: 100px;
+      color: white;
+      font-family: 'Mr Dafoe', cursive;
+      margin: 0 auto;
+      text-align: center;
+}
+
+#email {
+    width: 60%;
+    color: white;
+    padding: 1rem 1rem;
+    margin-left: 40px;
+    margin-right: 10px;
 
 }
 
+.submit-button {
+    display: flex;
+    padding-top: 1rem;
+
+}
+
+input[type=submit] {
+    background-color: white;
+    color: rgba(194, 49, 49);
+    padding: 0 2rem;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-family: 'Mr Dafoe';
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 767px) { .slideshow-container
+    { 
+        display: row;
+     }
+ }
 
 
  

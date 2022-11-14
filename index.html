@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mr+Dafoe&family=Poppins:wght@100;200;300&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="js.script.js" async></script>
-  </head>
+ </head>
   <body>
     <header>
       <div class="nav-container row">
@@ -34,25 +33,81 @@
     <main>
       <section class="intro">
         <div class="intro-text">
-          <h2>Are you looking for drink recipes for your next party?</h2>
+          <h2>Are you looking for drink recipies for your next party?</h2>
            <p>
-            Then you’ve come to at the right place! We love drinks and have
-            collected recipes from all over the world.
+            Then you’ve come to at the right place!
+          </p>
+            <p> We love drinks and have
+            collected recipies from all over the world.
           </p>
           <h2>Let´s get this party started!</h2>
           <div class="button">
             <a href="/drinks.html" id="cta-button">Drinks</a>
           </div>
           </div>
-        <div class="blogg-links">
-          <div class="link-items">
+        </section> 
+        <div class="slideshow-container">
+          <div class="mySlides fade"></div>
           <h3>Latest drinks:</h3>
-          <div>
-            
+          <div class="link-items">
+         <div class="numbertext">1 / 9</div>
+            <a href="add_link"> <img src="/images/menu/christmas-margarita-menu.jpg"  height="200px" width="150px">
+            </a><div class="text">Christmas Margarita</div>
           </div>
+          <div class="link-items">
+            <div class="numbertext">2 / 9</div>
+            <a href="add_link"> <img src="/images/menu/caramel-apple-hot-toddy-menu.jpg" height="200px" width="150px">
+            </a><div class="text">Caramel Apple Hot Toddy</div>
+          </div>
+          <div class="link-items">
+          <div class="numbertext">3 / 9</div>
+            <a href="add_link"> <img src="/images/menu/buzzy-affogato-menu.jpg" height="200px" width="150px">
+           </a><div class="text">Buzzy Affogato</div>
+          </div>
+          <div class="link-items">
+           <div class="numbertext">4 / 9</div>
+           <a href="add_link"> <img src="/images/menu/healthy-grapefruit-paloma-moctail-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Healthy Grapefruit Paloma Moctail</div>
+        </div>
+        <div class="link-items">
+          <div class="numbertext">5 / 9</div>
+          <a href="add_link"> <img src="/images/menu/cranberry-holiday-punch-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Cranberry Holiday Punch</div>
+          </div>
+          <div class="link-items">
+          <div class="numbertext">6 / 9</div>
+          <a href="add_link"> <img src="/images/menu/cuba-libre-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Cuba Libre</div>
+        </div>
+        <div class="link-items">
+          <div class="numbertext">7 / 9</div>
+          <a href="add_link"> <img src="/images/menu/green-apple-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Green Apple</div>
+        </div>
+          <div class="link-items">
+          <div class="numbertext">8 / 9</div>
+          <a href="add_link"> <img src="/images/menu/mojito-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Mojito</div>
+        </div>
+        <div class="link-items">
+          <div class="numbertext">9 / 9</div>
+          <a href="add_link"> <img src="/images/menu/singapore-sling-menu.jpg" height="200px" width="150px">
+          </a><div class="text">Singapore Sling</div>
+           </div>
+     
+          </div>
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
         </div>
     </main>
+    <script src="js.script.js" async></script>
     <div class="footer-container">
         <div class="footer-content">
             <div class="footer-content-item">
