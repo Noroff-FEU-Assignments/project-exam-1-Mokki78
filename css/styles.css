@@ -552,6 +552,7 @@ a:active {
     width: 60%;
     animation-name: fade;
     animation-duration: 1.5s;
+    box-sizing: border-box; 
 }
 
 @keyframes fade {
@@ -565,7 +566,6 @@ input[type=text], select, textarea{
     width: 80%; 
     padding: 12px;  
     border: 2px solid white;
-    box-sizing: border-box; 
     margin: 2rem;
     resize: vertical; 
   }
@@ -641,6 +641,7 @@ input[type=submit]:hover {
 
 .drink-item-container {
     display: flex;
+    
     background-color: black;
     padding-bottom: 5rem;
 
@@ -649,7 +650,7 @@ input[type=submit]:hover {
 .drink-content {
     justify-content: space-between;
     background-color: white;
-    width: 50%;
+    width: 100%;
     padding: 2rem;
     padding-top: 3rem;
 
@@ -658,8 +659,8 @@ input[type=submit]:hover {
 
 #drink-content {
     border: 3px solid white;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    
 }
 
 

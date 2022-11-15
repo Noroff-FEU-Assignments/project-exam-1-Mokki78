@@ -37,6 +37,34 @@ function myFunction() {
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
+ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+
+fetch("http://localhost:10008/wp-json/wp/v2/posts/").then((data)=>{
+
+    return data.json();
+
+}).then((completeData)=> {
+    let data1 = "url";
+    completeData.map((values)=> {
+        data1+=`<section class="drink-container">
+        <div class="drink-item-container">
+        <div class="drink-content">
+        </div>
+        <h1 class="title">${values.title}</h1>
+        <p class="description">${values.description}</p>
+        <div id="drink-content">
+          <img src=${values.image} alt="image"> 
+        </div>
+       </div>
+      </section>`
+
+      document.getElementById("drink-container").innerHTML=data1;
+
+    })  
+  
+}).catch((err)=> {
+    console.log(err);
+
+});
