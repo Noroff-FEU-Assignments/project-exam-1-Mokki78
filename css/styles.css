@@ -86,17 +86,12 @@ img {
     top: 0;
   }
   
-  /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
+ 
 
 
 .overlay {
@@ -212,10 +207,18 @@ a:active {
 .intro {
     width: 50%;
     background-color:  rgba(15, 6, 6, 0.7);
-    margin: 0 auto;
+    margin: 0 auto;    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
     
    
-}
+
 
 .intro-text {
     color: white; 
@@ -265,8 +268,16 @@ a:active {
 .footer-container {
     background-color: black;
     width: 100%;
-    color: white;
+    color: white;    animation-name: fade;
+    animation-duration: 1.5s;
 }
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+
 
 .footer-content {
    display: flex;
@@ -307,22 +318,63 @@ a:active {
     position: relative;
     margin: auto;
     display: flex;
+    flex-direction:inherit;
     gap: 20px;
     background-color: black;
     padding: 1rem;
     margin-top: 60px;
+    gap: 30px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+
+
+
+#blog-container {
+    color: white;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 60px;
+    gap: 30px;
 
 }
 
-.blog-article {
-    justify-content: flex-start;
+.blog-box {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
-
+#blog-box {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .blog-content {
     border: 3px solid white;
     opacity: 1.0;
+    gap: 20px;
+
+}
+
+.blog-content1, .blog-content2, .blog-content3 {
+    border: 3px solid white;
+    opacity: 1.0;
+    gap: 20px;
 
 }
 
@@ -453,8 +505,15 @@ a:active {
     display: flex;
     background-color: black;
     padding-bottom: 5rem;
-
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
 
 .about-content {
     justify-content: space-between;
@@ -468,6 +527,7 @@ a:active {
     border: 3px solid white;
     width: 50%;
     height: 50%;
+    
 
 }
 
@@ -490,7 +550,16 @@ a:active {
     padding: 3rem;
     margin: 0 auto;
     width: 60%;
-  }
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+  
 
 input[type=text], select, textarea{
     width: 80%; 
@@ -559,8 +628,16 @@ input[type=submit]:hover {
 /* blog article*/
 
 .drink-container {
-   
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+   
 
 .drink-item-container {
     display: flex;
