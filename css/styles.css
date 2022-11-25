@@ -213,10 +213,11 @@ a:active {
     flex-direction: column;
     width: 50%;
     background-color:  rgba(15, 6, 6, 0.7);
-    margin: 0 auto;    animation-name: fade;
+    margin: 0 auto;  
+    animation-name: fade;
     animation-duration: 1.5s;
-    padding: 8rem;
-    gap: 100px;
+    padding: 6rem;
+    gap: 50px;
     
 }
 
@@ -230,12 +231,13 @@ a:active {
     color: white; 
     font-size: 20px;
     text-align: center;
-    padding: 0 6rem;
+    padding: 0 4rem;
     
 }
 
 .cta {
-    position: absolute;
+    position: relative;
+    display: flex;
     margin: 0 auto;
    
 }
@@ -272,6 +274,7 @@ a:active {
 .footer-container {
     background-color: black;
     width: 100%;
+    height: 100%;
     color: white;    animation-name: fade;
     animation-duration: 1.5s;
 }
