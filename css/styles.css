@@ -1,5 +1,6 @@
- body {
+ html, body {
     display: grid;
+    
     background-color: black;
     background-image: url("/images/desktop/background-desktop.jpg");
     background-repeat: no-repeat;
@@ -9,11 +10,14 @@
 h1 {
     font-family: 'Mr Dafoe';
     font-size: 40px;
-
 }
 
-h2, h3 {
+h2{
     font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h3 {
     font-family: 'Special Elite', cursive;
 }
 
@@ -29,8 +33,6 @@ img {
 .nav-container {
     border: 2px solid white;
     background-color:  rgba(15, 6, 6, 0.5) ;
-    
-   
 }
 
 .main-nav {
@@ -149,6 +151,7 @@ img {
 
 .row {
     display: flex;
+    padding-bottom: 40px;
    
 }
 
@@ -205,10 +208,16 @@ a:active {
 }
 
 .intro {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     width: 50%;
     background-color:  rgba(15, 6, 6, 0.7);
     margin: 0 auto;    animation-name: fade;
     animation-duration: 1.5s;
+    padding: 8rem;
+    gap: 100px;
+    
 }
 
 @keyframes fade {
@@ -217,9 +226,6 @@ a:active {
   
 } 
     
-   
-
-
 .intro-text {
     color: white; 
     font-size: 20px;
@@ -229,11 +235,9 @@ a:active {
 }
 
 .cta {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    display: flex;
-    padding-top: 3rem;
-    margin-top: 100px;
+   
 }
 
 #cta-button {
@@ -364,6 +368,24 @@ a:active {
     
 }
 
+.container {
+    gap: 20px;
+    display: flex;
+}
+
+.content {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.results {
+    border: 3px solid white;
+    opacity: 1.0;
+
+}
+
 .blog-content {
     border: 3px solid white;
     opacity: 1.0;
@@ -371,7 +393,8 @@ a:active {
 
 }
 
-.blog-content1, .blog-content2, .blog-content3 {
+
+.content, .blog-content1, .blog-content2, .blog-content3 {
     border: 3px solid white;
     opacity: 1.0;
     gap: 20px;
@@ -399,6 +422,7 @@ a:active {
     gap: 20px;
     background-color: black;
     padding: 1rem;
+    padding-top: 80px;
    
 }
 
@@ -583,10 +607,8 @@ input[type=text], select, textarea{
 }
 
 .contact {
-      padding-top: 20px;
-      padding-bottom: 20px;
       justify-content: space-between;
-      gap: 100px;
+    
       color: white;
       font-family: 'Mr Dafoe', cursive;
       margin: 0 auto;
@@ -625,11 +647,20 @@ input[type=submit]:hover {
     background-color: black;
 }
 
+#status-success {
+    color: green;
+
+}
+
+#status-error {
+    color: red;
+}
+
 /* blog article*/
 
 .drink-container {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 @keyframes fade {
@@ -663,6 +694,145 @@ input[type=submit]:hover {
     
 }
 
+.single-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    gap: 100px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+.single-content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 4rem;
+   
+}
+
+.about-item-container {
+    display: flex;
+    background-color: black;
+    padding-bottom: 5rem;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+
+.about-content {
+    justify-content: space-between;
+    background-color: white;
+    width: 50%;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#about-content {
+    border: 3px solid white;
+    width: 50%;
+    height: 50%;
+}
+
+
+.fun-fact{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.details-title {
+    margin-bottom: 0.7em;
+}
+
+.details-image {
+    margin-bottom: 1em;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.details-content {
+    margin-bottom: 1em;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.card a.details {
+    margin-top: 0.5em;
+    background-color: var(--grey) !important;
+    color: white !important;
+}
+
+.card a.details:hover {
+    background-color: var(--light-grey) !important;
+    color: var(--grey) !important;
+}
+
+.card div.details {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background: white;
+}
+
+.name {
+    font-size: 16px;
+    margin-bottom: 0.75rem;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.image {
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.thank-you-container {
+    display: flex;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+.thank-you-content {
+    width: 60%;
+    max-width: 650px;
+    border: 2px solid white;
+    background-color: black;
+    padding: 2rem;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
 
 @media only screen and (max-width: 767px) { .slideshow-container
     { 

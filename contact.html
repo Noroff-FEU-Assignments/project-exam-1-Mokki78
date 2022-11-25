@@ -48,8 +48,8 @@
       </div>
     </div>
       <div class="form-container">
-        <div class="container-items"></div>
-        <form action="action_page.php">
+        <div class="container-items" id="status-success" id="status-error"></div>
+        <form action="http://example.com/subscribe.php" method="POST"></form>
           <label for="name">Name</label>
           <input type="text" id="name" name="fullname" placeholder="Your name">
           <div class="email">
@@ -58,9 +58,11 @@
         </div>
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Subject" style="height:40px"></textarea>
+        </form>
+        <form action="http://www.example.com/comments.php">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
-          <input type="submit" value="Submit" class="submit-button">
+          <input type="submit" value="Submit" class="submit-button"></a>
         </form>
         </div>
       </div>
@@ -86,6 +88,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js" async></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
