@@ -718,7 +718,8 @@ input[type=submit]:hover {
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
-    padding: 4rem;
+    padding: 2 1rem;
+    text-align: center;
    
 }
 
@@ -752,8 +753,12 @@ input[type=submit]:hover {
 
 
 .fun-fact{
+    display: flex;
+    justify-content: space-around;
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 100px;
+    padding: 1rem;
 }
 
 .details-title {
