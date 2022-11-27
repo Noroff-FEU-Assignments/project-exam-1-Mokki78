@@ -531,15 +531,15 @@ a:active {
 .about-content {
     justify-content: space-between;
     background-color: white;
-    width: 50%;
-    padding: 2rem;
-    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+   padding-top: 3rem;
 }
 
 #about-content {
     border: 3px solid white;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     
 
 }
@@ -575,13 +575,14 @@ a:active {
 } 
   
 
-input[type=text], select, textarea{
+input[type=text], select, textarea, #email{
     width: 80%; 
     padding: 12px;  
-    border: 2px solid white;
-    margin: 2rem;
+    border: 1px solid white;
+    margin: 1rem;
     resize: vertical; 
   }
+  
 
 .contact-container {
       display: flex;
@@ -605,12 +606,9 @@ input[type=text], select, textarea{
 }
 
 #email {
-    width: 60%;
     color: white;
-    padding: 1rem 1rem;
-    margin-left: 40px;
-    margin-right: 10px;
-
+   
+  
 }
 
 .submit-button {
@@ -883,18 +881,6 @@ input[type=submit]:hover {
      }
  }  
 
- @media only screen and (max-width: 800px) { 
-    
-    #about-content  { 
-        max-width: 100%;
-        margin: 0 auto;
-        
-        
-        
-       
-     }
- }  
-
 
  @media only screen and (max-width: 600px) { 
     
@@ -902,7 +888,7 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        max-width: 100%;
+        max-width: 95%;
         margin: 0 auto;
         background-color: none;
         
@@ -910,6 +896,32 @@ input[type=submit]:hover {
        
      }
  } 
+
+ @media only screen and (max-width: 600px) { 
+    
+    #about-content { 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        
+     
+       
+     }
+ }  
+
+ @media only screen and (max-width: 600px) { 
+    
+   .about-content {
+       width: 100%;
+
+
+       
+        
+     
+       
+     }
+ }
 
   @media only screen and (max-width: 767px) { 
     
@@ -973,3 +985,15 @@ input[type=submit]:hover {
       right: 35px;
     }
   }
+
+
+
+  @media screen and (max-height: 450px) {
+    .contact-container{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    
+  }
+  
