@@ -1,10 +1,11 @@
  html, body {
     display: grid;
-    
     background-color: black;
     background-image: url("/images/desktop/background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100%;
+    height: auto;
 }
 
 h1 {
@@ -27,7 +28,8 @@ p {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height: auto;
 }
 
 .nav-container {
@@ -274,7 +276,7 @@ a:active {
 .footer-container {
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: auto;
     color: white;    animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -321,9 +323,10 @@ a:active {
 .blog-container {
     color: white;
     width: 90%;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction:inherit;
     gap: 20px;
@@ -346,6 +349,7 @@ a:active {
 #blog-container {
     color: white;
     width: 90%;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     margin: auto;
@@ -355,6 +359,7 @@ a:active {
     padding: 1rem;
     margin-top: 60px;
     gap: 30px;
+   
 
 }
 
@@ -362,24 +367,32 @@ a:active {
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 #blog-box {
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
     
 }
 
 .container {
     gap: 20px;
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .content {
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
  
 }
 
@@ -418,8 +431,9 @@ a:active {
 .slideshow-container {
     color: white;
     width: 100%;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
-     position: relative;
+    position: relative;
     margin: auto;
     display: flex;
     gap: 20px;
@@ -434,7 +448,7 @@ a:active {
 }
 
 .mySlides {
-    height: 100%;
+    height: auto;
 
 }
 
@@ -675,7 +689,6 @@ input[type=submit]:hover {
 
 .drink-item-container {
     display: flex;
-    
     background-color: black;
     padding-bottom: 5rem;
 
@@ -685,6 +698,7 @@ input[type=submit]:hover {
     justify-content: space-between;
     background-color: white;
     width: 100%;
+    height: fit-content;
     padding: 2rem;
     padding-top: 3rem;
 
