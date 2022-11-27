@@ -856,20 +856,21 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-@media only screen and (max-width: 767px) { .slideshow-container
-    { 
-        display: row;
+@media only screen and (max-width: 767px) { 
+    
+    .slideshow-container { 
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+    
      }
  }
-
-
- 
 
 @media only screen and (max-width: 767px) { body 
     {  background-image: url(/images/mobile/background-mobile.jpg); }
  }
 
- @media screen and (max-height: 450px) {
+ @media screen and (max-width: 767px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
       font-size: 40px;
@@ -877,3 +878,64 @@ input[type=submit]:hover {
       right: 35px;
     }
   }
+
+ @media only screen and (max-width: 767px) { 
+    
+    .blog-container { 
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        block-size: auto;
+        padding: 0rem;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
+    p {
+      font-size: 14px;
+    }
+  }
+
+
+
+ @media only screen and (max-width: 767px) { 
+    
+    .about-content, #about-content { 
+         max-width: 100%;
+        margin: 0 auto;
+        background-color: none;
+        
+       
+     }
+ }  
+
+ @media only screen and (max-width: 767px) { 
+    
+    .footer-container { 
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        border-color: #333;
+      
+       
+       
+     }
+ }  
+
+
+
+ @media only screen and (max-width: 767px) { 
+    
+    .footer-content, #footer-content-item { 
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        border-style: none;
+      
+       
+       
+     }
+ } 
+ 
