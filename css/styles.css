@@ -60,6 +60,19 @@ img {
     
 }
 
+.hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.bar1, .bar2, .bar3  {
+    background-color: white;
+    width: 25px;
+    min-height: 3px;
+    margin: 5px 0;
+}
+
 
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -997,3 +1010,21 @@ input[type=submit]:hover {
     
   }
   
+  @media screen and (min-width: 657px) {
+    .hamburger-icon{
+       display: none;
+
+    }
+    
+  }
+
+  @media screen and (max-width: 657px) {
+    .prev, .next, .dot{
+       display: none;
+
+    }
+    
+  }
+
+
+ 
