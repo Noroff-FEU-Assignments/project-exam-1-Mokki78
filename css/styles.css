@@ -544,9 +544,7 @@ a:active {
 
 /* About */
 
-.about-container {
 
-}
 
 .about-item-container {
     display: flex;
@@ -632,22 +630,58 @@ input[type=text], select, textarea, #email{
 
 .contact {
       justify-content: space-between;
-    
-      color: white;
+     color: white;
       font-family: 'Mr Dafoe', cursive;
       margin: 0 auto;
       text-align: center;
 }
 
-#email {
-    color: white;
-   
-  
-}
 
 .submit-button {
     display: flex;
     padding-top: 1rem;
+
+}
+
+#name-error {
+    color: red;
+    display: inline-block;
+   
+
+}
+#email-error {
+    color: red;
+    
+}
+
+#subject-error {
+    color: red;
+    
+}
+
+#message-error {
+    color: red;
+    
+}
+
+#submit-error {
+    color: red;
+    
+}
+
+.form-container span {
+    display: flex;
+    position: relative;
+    padding-left: 10%;
+    font-size: 14px;
+
+}
+
+.form-container i{
+    color: green;
+    display: flex;
+    position: relative;
+    padding-left: 10%;
 
 }
 
