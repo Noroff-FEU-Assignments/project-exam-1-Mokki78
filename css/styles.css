@@ -850,7 +850,7 @@ input[type=submit]:hover {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    width: 80%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
     border-radius: 1rem;
