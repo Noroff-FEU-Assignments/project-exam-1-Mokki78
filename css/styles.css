@@ -1,4 +1,4 @@
- html, body {
+  body {
     display: grid;
     background-color: black;
     background-image: url("/images/desktop/background-desktop.jpg");
@@ -41,8 +41,7 @@ img {
     background-color:  rgba(15, 6, 6, 0.5) ;
 }
 
-.main-nav {
-}
+
 
 .main-nav-list {
     font-size: 1,5rem;
@@ -324,6 +323,88 @@ a:active {
     border: 2px solid white;
 }
 
+/* Blog api*/
+
+#blog-header {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 20%;
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(15, 6, 6, 0.5)
+}
+
+
+#blog-container {
+    display: flex;
+    flex-direction:inherit;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 60px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid white;
+    opacity: 1.0;
+    gap: 20px;
+
+}
+
+
+.image {
+    width: 100%;
+    height: auto;
+
+}
+
+.title {
+    display: flex;
+    position: relative;
+    color: white;
+    margin: 0 auto;
+    
+}
+
+.blog-card{
+    border: 3px solid white;
+    opacity: 1.0;
+    gap: 20px;
+
+}
+
+.blog-card:hover {
+    opacity: 0.5;
+
+}
+
+.blog-card::after {
+    opacity: 1.0;
+
+}
+
+
 /* Blog */
 
 .blog-container {
@@ -352,22 +433,7 @@ a:active {
 
 
 
-#blog-container {
-    color: white;
-    width: 90%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    margin: auto;
-    display: flex;
-    gap: 20px;
-    background-color: black;
-    padding: 1rem;
-    margin-top: 60px;
-    gap: 30px;
-   
 
-}
 
 .blog-box {
     gap: 20px;
@@ -405,13 +471,6 @@ a:active {
 .results {
     border: 3px solid white;
     opacity: 1.0;
-
-}
-
-.blog-content {
-    border: 3px solid white;
-    opacity: 1.0;
-    gap: 20px;
 
 }
 
@@ -545,37 +604,6 @@ a:active {
 /* About */
 
 
-
-.about-item-container {
-    display: flex;
-    background-color: black;
-    padding-bottom: 5rem;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-
-.about-content {
-    justify-content: space-between;
-    background-color: white;
-    width: 100%;
-    height: auto;
-   padding-top: 3rem;
-}
-
-#about-content {
-    border: 3px solid white;
-    width: 100%;
-    height: auto;
-    
-
-}
-
 #link {
     color: rgba(194, 49, 49);
 }
@@ -674,6 +702,7 @@ input[type=text], select, textarea, #email{
     position: relative;
     padding-left: 10%;
     font-size: 14px;
+    
 
 }
 
@@ -702,20 +731,15 @@ input[type=submit]:hover {
     background-color: black;
 }
 
-#status-success {
-    color: green;
-
-}
-
-#status-error {
-    color: red;
-}
-
 /* blog article*/
 
 .drink-container {
     animation-name: fade;
     animation-duration: 2s;
+    display: flex;
+    background-color: black;
+    padding-bottom: 5rem;
+
 }
 
 @keyframes fade {
@@ -725,29 +749,6 @@ input[type=submit]:hover {
 } 
    
 
-.drink-item-container {
-    display: flex;
-    background-color: black;
-    padding-bottom: 5rem;
-
-}
-
-.drink-content {
-    justify-content: space-between;
-    background-color: white;
-    width: 100%;
-    height: fit-content;
-    padding: 2rem;
-    padding-top: 3rem;
-
-
-}
-
-#drink-content {
-    border: 3px solid white;
-    width: 100%;
-    
-}
 
 .single-container {
     display: flex;
@@ -774,6 +775,24 @@ input[type=submit]:hover {
     text-align: center;
    
 }
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35x;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0,3s;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .about-item-container {
     display: flex;
@@ -803,6 +822,11 @@ input[type=submit]:hover {
     height: 50%;
 }
 
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
 
 .fun-fact{
     display: flex;
@@ -813,36 +837,57 @@ input[type=submit]:hover {
     padding: 1rem;
 }
 
-.details-title {
-    margin-bottom: 0.7em;
-}
-
-.details-image {
-    margin-bottom: 1em;
-    height: 100%;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
-.details-content {
-    margin-bottom: 1em;
-}
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
 
-
-.hidden {
-    display: none;
-}
-
-.card {
+.card-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    max-width: 300px;
-    margin: 1rem;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
     border-radius: 1rem;
+     animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.0} 
+    to {opacity: 1}
+  
+} 
+
+.card-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Mr Dafoe';
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
     text-decoration: none;
+
 }
 
 .card a.details {
@@ -863,6 +908,11 @@ input[type=submit]:hover {
     background: white;
 }
 
+.menu {
+    display: flex;
+    width: 100%;
+}
+
 .name {
     font-size: 16px;
     margin-bottom: 0.75rem;
@@ -875,6 +925,7 @@ input[type=submit]:hover {
     background-size: cover;
     background-position: center top;
 }
+
 
 .thank-you-container {
     display: flex;
@@ -926,6 +977,13 @@ input[type=submit]:hover {
     
   }
 
+  @media screen and (max-width: 767px) {
+      .blog-card {
+          flex: 40%;
+          max-width: 40%;
+          
+      }
+  }
  
 
 
@@ -1090,5 +1148,9 @@ input[type=submit]:hover {
     
   }
 
-
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
  

@@ -31,7 +31,7 @@ validateName();
 function validateEmail() {
     const email = document.getElementById("email").value;
 
-        if(email.length == 0){ 
+        if(email.length == 1){ 
         emailError.innerHTML = "please enter an email";
         return false;
      } 
@@ -109,3 +109,5 @@ form.onsubmit = () => {
     
     
 }
+
+form.addEventListener("submit", validateForm);

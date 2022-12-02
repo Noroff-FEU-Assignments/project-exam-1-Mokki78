@@ -7,22 +7,30 @@
       name="description"
       content="Find drink recipies for your next party or dinner date. Let`s get this party started!"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mr+Dafoe&family=Poppins:wght@100;200;300&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mr+Dafoe&family=Poppins:wght@100;200;300&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3264894,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
- </head>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3264894, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
   <body>
     <header>
       <div class="nav-container row">
@@ -34,68 +42,66 @@
             <li class="main-nav-item">
               <a href="index.html">Home</a>
             </li>
-            <li class="main-nav-item"><a href="about.html" class="active">About</a></li>
+            <li class="main-nav-item">
+              <a href="about.html" class="active">About</a>
+            </li>
             <li class="main-nav-item"><a href="drinks.html">Drinks</a></li>
             <li class="main-nav-item"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
       <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-        <!-- Overlay content -->
-        <div class="overlay-content"></div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="drinks.html">Drinks</a>
           <a href="contact.html">Contact</a>
         </div>
-      
-         </div>
-         <div>
-             <span onclick="openNav()" class="hamburger-icon">
-             <div class="bar1"></div>
-             <div class="bar2"></div>
-             <div class="bar3"></div>
-           
-          </span>
-        </div>
+      </div>
+      <div>
+        <span onclick="openNav()" class="hamburger-icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </span>
+      </div>
     </header>
     <main>
-        <div>
-            <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="drinks.html">Back to drinks</a></li>
-                <li></li>
-            </ul>
-        </div>
-    <div class="container content">
-      <div class="details"> 
-        <div class="loader"></div>
+      <div>
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="drinks.html">Back to drinks</a></li>
+        </ul>
       </div>
-     </div>
+      <div class="card-container"></div>
+      <div class="loader"></div>
     </main>
     <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-content-item">
-                <p>Search for your favorite drink</p>
-           </div>
-           <div id="footer-content-item">
-              <li id="footer-item"><a href="about.html">About</a></li>
-              <li id="footer-item"><a href="drinks.html">Drinks</a></li>
-              <li id="footer-item"><a href="contact.html">Contact</a></li>
-            </ul>
-       </div>
-       <div id="footer-content-item">
-        <a href="/index.html">
+      <div class="footer-content">
+        <div class="footer-content-item">
+          <p>Search for your favourite drink</p>
+        </div>
+        <div id="footer-content-item">
+          <ul>
+            <li id="footer-item"><a href="about.html">About</a></li>
+            <li id="footer-item"><a href="drinks.html">Drinks</a></li>
+            <li id="footer-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div id="footer-content-item">
+          <a href="/index.html">
             <img alt="Drinkiez, logo" src="images/logo.gif" class="logo" />
           </a>
-          <p>
-              @2022
-          </p>
+          <p>@2022</p>
         </div>
       </div>
     </div>
+
+    <script src="js/components.js"></script>
+    <script src="js/script-test.js"></script>
     <script src="js/script.js"></script>
     <script src="js/details.js"></script>
   </body>
