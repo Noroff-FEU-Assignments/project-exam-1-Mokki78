@@ -88,8 +88,9 @@ async function fetchMenu(maxDrinks = 1000) {
       html += `<a href="detail-page.html?id=${drink.id}" class="blog-content">
           <div class="image" style="background-image: url(${drink.featured_image_url});"> </div>
               <h4 class="name">${drink.title.rendered}</h4>                                                                                                                                                        
-          </a>`;
+  </a>`;
     }
+
     resultsContainer.innerHTML = html;
   } catch (error) {
     resultsContainer.innerHTML = "";

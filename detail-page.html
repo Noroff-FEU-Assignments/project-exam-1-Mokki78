@@ -43,31 +43,33 @@
               <a href="index.html">Home</a>
             </li>
             <li class="main-nav-item">
-              <a href="about.html" class="active">About</a>
+              <a href="about.html">About</a>
             </li>
             <li class="main-nav-item"><a href="drinks.html">Drinks</a></li>
             <li class="main-nav-item"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <div class="overlay-content">
+      <div id="mobileNav" class="overlay-mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="overlay-mobile-content"></div>
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="drinks.html">Drinks</a>
           <a href="contact.html">Contact</a>
         </div>
-      </div>
-      <div>
-        <span onclick="openNav()" class="hamburger-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </span>
-      </div>
+        </div>
+         <div>
+             <span onclick="openNav()" class="hamburger-icon">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+           
+          </span>
+        </div>
+        <a href="/index.html">
+          <img alt="Drinkiez, logo" src="images/logo.gif" class="mobile-logo" />
+        </a>
     </header>
     <main>
       <div>
@@ -77,29 +79,27 @@
         </ul>
       </div>
       <div class="card-container"></div>
-      <div class="loader"></div>
+      <div id="loader"></div>
     </main>
     <div class="footer-container">
       <div class="footer-content">
-        <div class="footer-content-item">
-          <p>Search for your favourite drink</p>
-        </div>
-        <div id="footer-content-item">
-          <ul>
+          <div class="footer-content-item">
+            <p class="favourite">Search for your favourite drink</p>
+              <div class="search"></div>
+         </div>
+         <div id="footer-content-item">
             <li id="footer-item"><a href="about.html">About</a></li>
             <li id="footer-item"><a href="drinks.html">Drinks</a></li>
             <li id="footer-item"><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
-        <div id="footer-content-item">
-          <a href="/index.html">
-            <img alt="Drinkiez, logo" src="images/logo.gif" class="logo" />
-          </a>
-          <p>@2022</p>
-        </div>
-      </div>
+     </div>
+     <div id="footer-content-item">
+      <a href="/index.html">
+         <p id="logo">DRinkiez</p>  <p>2022</p>
+        </a>
+       </div>
     </div>
-
+  </div>
     <script src="js/components.js"></script>
     <script src="js/script-test.js"></script>
     <script src="js/script.js"></script>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Find drink recipies for your next party or dinner date. Let`s get this party started!"
+      content="Learn more about me, Oscar Johsen, the man behind the blog."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -40,18 +40,15 @@
           </ul>
         </nav>
       </div>
-      <div id="myNav" class="overlay">
+      <div id="mobileNav" class="overlay-mobile">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-        <!-- Overlay content -->
-        <div class="overlay-content"></div>
+       <div class="overlay-mobile-content"></div>
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+          <a href="about.html" class="active">About</a>
           <a href="drinks.html">Drinks</a>
           <a href="contact.html">Contact</a>
         </div>
-      
-         </div>
+        </div>
          <div>
              <span onclick="openNav()" class="hamburger-icon">
              <div class="bar1"></div>
@@ -60,6 +57,9 @@
            
           </span>
         </div>
+        <a href="/index.html">
+          <img alt="Drinkiez, logo" src="images/logo.gif" class="mobile-logo" />
+        </a>
     </header>
     <main>
       <div>
@@ -68,9 +68,13 @@
             <li>About</li>
          </ul>
     </div>
-    <section class="about-container">
-      <div class="about-item-container">
-      <div class="about-content">
+    <h1>About</h1>
+    <div class="about-item-container">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img src="/images/desktop/about-desktop.jpg" alt="the man behind the blog, Oscar Johnson" class="modal">
+      </div>
+     <div class="about-content">
         <h2>Hi</h2>
         <p>
 
@@ -91,34 +95,30 @@ And if you have an amazing new recipe for me, or just want to let me know what y
 </p>
 
       </div>
-      <div id="about-content">
+      <div id="about-content" class="myImg">
         <img src="/images/desktop/about-desktop.jpg" alt="the man behind the blog, Oscar Johnson">
       </div>
      </div>
-    </section>
-     
-    </main>
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-content-item">
-                <p>Search for your favourite drink</p>
-           </div>
-           <div id="footer-content-item">
-              <li id="footer-item"><a href="about.html">About</a></li>
-              <li id="footer-item"><a href="drinks.html">Drinks</a></li>
-              <li id="footer-item"><a href="contact.html">Contact</a></li>
-            </ul>
+  </main>
+  <div class="footer-container">
+    <div class="footer-content">
+        <div class="footer-content-item">
+          <p class="favourite">Search for your favourite drink</p>
+            <div class="search"></div>
        </div>
        <div id="footer-content-item">
-        <a href="/index.html">
-            <img alt="Drinkiez, logo" src="images/logo.gif" class="logo" />
-          </a>
-          <p>
-              @2022
-          </p>
-        </div>
-      </div>
-    </div>
-    <script src="js/script.js"></script>
+          <li id="footer-item"><a href="about.html">About</a></li>
+          <li id="footer-item"><a href="drinks.html">Drinks</a></li>
+          <li id="footer-item"><a href="contact.html">Contact</a></li>
+        </ul>
+   </div>
+   <div id="footer-content-item">
+    <a href="/index.html">
+       <p id="logo">DRinkiez</p>  <p>2022</p>
+      </a>
+     </div>
+  </div>
+</div>
+   <script src="js/script.js"></script>
   </body>
 </html>

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Find drink recipies for your next party or dinner date. Let`s get this party started!"
-    />
+      content="Find drink recipies for your next party or dinner date. Let`s get this party started!"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mr+Dafoe&family=Poppins:wght@100;200;300&family=Special+Elite&display=swap" rel="stylesheet">
@@ -44,30 +43,30 @@
           </ul>
         </nav>
       </div>
-   <div id="myNav" class="overlay">
+   <div id="mobileNav" class="overlay-mobile">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content"></div>
-    <a href="index.html">Home</a>
+ <div class="overlay-mobile-content"></div>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="drinks.html">Drinks</a>
     <a href="contact.html">Contact</a>
   </div>
-
-   </div>
+  </div>
    <div>
        <span onclick="openNav()" class="hamburger-icon">
        <div class="bar1"></div>
        <div class="bar2"></div>
        <div class="bar3"></div>
-     
-    </span>
+     </span>
   </div>
+  <a href="/index.html">
+    <img alt="Drinkiez, logo" src="images/logo.gif" class="mobile-logo" />
+  </a>
    </header>
     <main>
+      <h1>Welcome to DRinkiez</h1>
       <section class="intro">
-        <div class="intro-text">
+       <div class="intro-text">
           <h2>Are you looking for drink recipies for your next party?</h2>
           <p>
            Then you’ve come to at the right place!
@@ -81,7 +80,7 @@
             <a href="/drinks.html" id="cta-button">Drinks</a>
           </div>
         </section> 
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="blog-container">
           <div class="mySlides fade"></div>
           <h3>Latest drinks:</h3>
           <div class="link-items">
@@ -144,7 +143,8 @@
    <div class="footer-container">
         <div class="footer-content">
             <div class="footer-content-item">
-                <p>Search for your favourite drink</p>
+              <p class="favourite">Search for your favourite drink</p>
+                <div class="search"></div>
            </div>
            <div id="footer-content-item">
               <li id="footer-item"><a href="about.html">About</a></li>
@@ -154,7 +154,7 @@
        </div>
        <div id="footer-content-item">
         <a href="/index.html">
-            <img alt="Drinkiez, logo" src="images/logo.gif" class="logo" text="@2022" />
+           <p id="logo">DRinkiez</p>  <p>2022</p>
           </a>
          </div>
       </div>

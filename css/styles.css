@@ -9,13 +9,22 @@
 }
 
 h1 {
+    display: flex;
+    padding-left: 20px;
     font-family: 'Mr Dafoe';
     font-size: 40px;
+    color: white;
+
+}
+
+.active{
+    background-color: rgba(242, 233, 233, 0.5) ;
+    
 }
 
 #h2 {
      font-family: 'Mr Dafoe';
-    font-size: 40px;
+    font-size: 35px;
 }
 h2{
     font-size: 22px;
@@ -23,25 +32,38 @@ h2{
 }
 
 h3 {
-    font-family: 'Special Elite', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-p {
+
+p{
     font-size: 18px;
-    font-family: 'Special Elite', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
+
 
 img {
     width: 100%;
     height: auto;
 }
 
+.mobile-logo {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: black;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    transition: 0,4s;
+    margin: 1rem;
+
+}
+
 .nav-container {
     border: 2px solid white;
     background-color:  rgba(15, 6, 6, 0.5) ;
 }
-
-
 
 .main-nav-list {
     font-size: 1,5rem;
@@ -52,7 +74,6 @@ img {
     list-style: none;
     margin: 0 auto;
 }
-
 
 .main-nav-item {
     Padding: 0 2rem ; 
@@ -77,53 +98,47 @@ img {
 }
 
 
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+.overlay-mobile {
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s;
   }
   
-  /* Position the content inside the overlay */
-  .overlay-content {
+ 
+  .overlay-mobile-content {
     display: flex;
     flex-direction: row;
     position: relative;
     margin: 0 auto;
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    width: 100%; 
+    text-align: center; 
     
   }
   
-  /* The navigation links inside the overlay */
-  .overlay a {
-    
+  .overlay-mobile a {
     padding: 8px;
     text-decoration: none;
     margin: 0 auto;
     font-size: 36px;
     font-family: 'Mr Dafoe';
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
   }
 
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+  .overlay-mobile a:hover, .overlay-mobile a:focus {
     color: rgba(194, 49, 49);
   
   }
   
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+  .overlay-mobile .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -225,6 +240,8 @@ a:active {
     
 }
 
+/* Button */
+
 .cta {
     position: relative;
     display: flex;
@@ -252,6 +269,32 @@ a:active {
     
 }
 
+.refresh-button {
+    display: flex;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.submit-button {
+    display: flex;
+    padding-top: 1rem;
+    background-color: white;
+    color: rgba(194, 49, 49);
+    padding: 0 2rem;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-family: 'Mr Dafoe';
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* LInks */
 
 .blogg-links {
     display: flex;
@@ -259,7 +302,7 @@ a:active {
 
 }
 
-
+/* Footer */
 
 .footer-container {
     background-color: black;
@@ -288,6 +331,7 @@ a:active {
 
 #footer-content-item {
     font-family: 'Mr Dafoe', cursive;
+    flex-wrap: wrap;
     font-size: 2rem;
     padding: 3rem;
     text-decoration: none;
@@ -300,6 +344,7 @@ a:active {
 .footer-content-item {
     font-family: 'Mr Dafoe', cursive;
     font-size: 2rem;
+    flex-wrap: wrap;
     padding: 3rem;
     text-decoration: none;
     margin: 0 auto;
@@ -308,10 +353,16 @@ a:active {
     
 }
 
+#logo {
+    font-family: 'Mr Dafoe';
+    font-size: 25px;
+}
+
 .search {
     display: flex;
     justify-content: space-between;
     gap:30px;
+    flex-wrap: wrap;
     position: relative;
     width: 150px;
     max-height: 20px;;
@@ -358,6 +409,8 @@ a:active {
   
 } 
 
+
+
 .blog-content {
     display: flex;
     flex-direction: column;
@@ -368,8 +421,8 @@ a:active {
     margin: 0 auto;
     border: 2px solid white;
     opacity: 1.0;
-    gap: 20px;
-
+   
+    
 }
 
 
@@ -412,6 +465,7 @@ a:active {
     width: 90%;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -431,57 +485,6 @@ a:active {
   
 } 
 
-
-
-
-
-.blog-box {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
-#blog-box {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    
-}
-
-.container {
-    gap: 20px;
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.content {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
- 
-}
-
-.results {
-    border: 3px solid white;
-    opacity: 1.0;
-
-}
-
-
-.content, .blog-content1, .blog-content2, .blog-content3 {
-    border: 3px solid white;
-    opacity: 1.0;
-    gap: 20px;
-
-}
-
 .blog-content:hover {
     opacity: 0.5;
 
@@ -491,7 +494,6 @@ a:active {
     opacity: 1.0;
 
 }
-
 
 .slideshow-container {
     color: white;
@@ -572,9 +574,7 @@ a:active {
   }
   
   
-  
-  /* Fading animation */
-  .fade {
+   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -585,23 +585,6 @@ a:active {
   
 } 
 
-.link-items {
-    
-    opacity: 1.0;
-  
-}
-
-.link-items:hover {
-     opacity: 0.5;
-
-}
-
-.link-items::after {
-     opacity: 1.0;
-
-}
-
-/* About */
 
 
 #link {
@@ -615,6 +598,7 @@ a:active {
 
 }
 
+
 /* Contact form*/
 
 .form-container {
@@ -623,9 +607,12 @@ a:active {
     padding: 3rem;
     margin: 0 auto;
     width: 60%;
+    margin-bottom: 3rem;
     animation-name: fade;
     animation-duration: 1.5s;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+   
+   
 }
 
 @keyframes fade {
@@ -645,9 +632,9 @@ input[type=text], select, textarea, #email{
   
 
 .contact-container {
-      display: flex;
-      flex-direction: row;
-      background-color:  rgba(15, 6, 6, 0.7);
+    display: flex;
+    flex-direction: row;
+    background-color:  rgba(15, 6, 6, 0.7);
 }
 
 .container-items {
@@ -657,52 +644,26 @@ input[type=text], select, textarea, #email{
 }
 
 .contact {
-      justify-content: space-between;
-     color: white;
-      font-family: 'Mr Dafoe', cursive;
-      margin: 0 auto;
-      text-align: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Mr Dafoe', cursive;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
-.submit-button {
-    display: flex;
-    padding-top: 1rem;
-
-}
-
-#name-error {
+#name-error,#email-error ,#subject-error, #message-error, #submit-error  {
     color: red;
-    display: inline-block;
+    display: none;
    
-
-}
-#email-error {
-    color: red;
-    
 }
 
-#subject-error {
-    color: red;
-    
-}
-
-#message-error {
-    color: red;
-    
-}
-
-#submit-error {
-    color: red;
-    
-}
 
 .form-container span {
     display: flex;
     position: relative;
     padding-left: 10%;
     font-size: 14px;
-    
 
 }
 
@@ -714,112 +675,46 @@ input[type=text], select, textarea, #email{
 
 }
 
-input[type=submit] {
-    background-color: white;
-    color: rgba(194, 49, 49);
-    padding: 0 2rem;
-    border-radius: 30px;
-    font-size: 2rem;
-    font-family: 'Mr Dafoe';
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-input[type=submit]:hover {
-    color: white;
-    background-color: black;
-}
-
-/* blog article*/
-
-.drink-container {
-    animation-name: fade;
-    animation-duration: 2s;
-    display: flex;
-    background-color: black;
-    padding-bottom: 5rem;
-
-}
-
-@keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
+.loader {
+    border: 4px dotted #f3f3f3; 
+    border-top: 4 px slashed rgba(15, 6, 6, 0.7) ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
   
-} 
-   
+ @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+  }
 
-
-.single-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    gap: 100px;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-
-
-.single-content {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 2 1rem;
-    text-align: center;
-   
-}
-
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35x;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0,3s;
-}
-
-.close:hover, .close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.about-item-container {
+ .about-item-container {
     display: flex;
     background-color: black;
     padding-bottom: 5rem;
     animation-name: fade;
     animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
 } 
 
 .about-content {
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: white;
     width: 50%;
+    height: auto;
+    padding: 2 6rem;
     padding: 2rem;
-    padding-top: 3rem;
+    font-family: 'Mr Dafoe';
+
 }
 
 #about-content {
+    flex-wrap: wrap;
     border: 3px solid white;
     width: 50%;
-    height: 50%;
+    height: auto;
+    
 }
 
 @keyframes fade {
@@ -828,22 +723,7 @@ input[type=submit]:hover {
   
 } 
 
-.fun-fact{
-    display: flex;
-    justify-content: space-around;
-    font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    gap: 100px;
-    padding: 1rem;
-}
-
-
-
-@keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
+/* Blog page */
 
 .card-container {
     display: flex;
@@ -854,7 +734,7 @@ input[type=submit]:hover {
     height: auto;
     margin: 0 auto;
     border-radius: 1rem;
-     animation-name: fade;
+    animation-name: fade;
     animation-duration: 1.5s;
 }
 
@@ -864,11 +744,33 @@ input[type=submit]:hover {
   
 } 
 
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding:  1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    width: 80%;
+    text-decoration: none;
+
+}
+
 .card-image {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    text-decoration: none;
+}
+
+.card-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .card-title {
@@ -877,35 +779,6 @@ input[type=submit]:hover {
     font-family: 'Mr Dafoe';
     font-size: 3rem;
     margin: 0 auto;
-}
-
-.card-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3rem;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    width: 80%;
-    text-decoration: none;
-
-}
-
-.card a.details {
-    margin-top: 0.5em;
-    background-color: var(--grey) !important;
-    color: white !important;
-}
-
-.card a.details:hover {
-    background-color: var(--light-grey) !important;
-    color: var(--grey) !important;
-}
-
-.card div.details {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
-    background: white;
 }
 
 .menu {
@@ -943,6 +816,75 @@ input[type=submit]:hover {
     margin: 0 auto;
     color: white;
     text-align: center;
+    margin-bottom: 3rem;
+}
+
+.myImg {
+    
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+   
+}
+
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 767px) { 
@@ -959,25 +901,31 @@ input[type=submit]:hover {
     {  background-image: url(/images/mobile/background-mobile.jpg); }
  }
 
- @media screen and (max-width: 767px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
+ @media screen and (max-width: 800px) {
+    .overlay-mobile .closebtn {
       font-size: 40px;
       top: 15px;
       right: 35px;
     }
   }
 
- 
-  @media screen and (min-width: 767px) {
-    .overlay {
+
+  @media screen and (min-width: 800px) {
+    .overlay-mobile {
         display: none;
     }  
    
     
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 800px) {
+    .intro {
+        width: 80%
+    }
+    
+  }
+
+  @media screen and (max-width: 800px) {
       .blog-card {
           flex: 40%;
           max-width: 40%;
@@ -986,16 +934,7 @@ input[type=submit]:hover {
   }
  
 
-
-@media screen and (min-width: 767px) {
-    .hamburger-icon {
-        display: none;
-
-    }
-    
-  } 
-
- @media only screen and (max-width: 767px) { 
+ @media only screen and (max-width: 800px) { 
     
     .blog-container { 
         display: flex;
@@ -1007,69 +946,74 @@ input[type=submit]:hover {
      }
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
     p {
       font-size: 14px;
     }
   }
 
+ @media only screen and (max-width: 800px) {
+     #cta-button, .submit-button {
+         font-size: 25px;
+         padding: 0 2rem;
+     }
+
+  }
+
+@media only screen and (max-width: 800px) {
+    .card-title{
+        font-size: 30px;
+     }
+} 
+
+@media only screen and (max-width: 800px) {
+    .card-content, .card-text, .card-image{
+        text-decoration: none;
+     }
+} 
 
 
  @media only screen and (max-width: 800px) { 
     
     .about-content  { 
-        max-width: 100%;
+        max-width: 80%;
         margin: 0 auto;
-        padding: 3rem;
-        
-        
-       
-     }
+        padding: 3rem;     
+    }
  }  
 
 
- @media only screen and (max-width: 600px) { 
+ @media only screen and (max-width: 800px) { 
     
     .about-item-container { 
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        max-width: 95%;
+        max-width: 80%;
+        padding: 1rem;
         margin: 0 auto;
-        background-color: none;
+        background-color: white;
         
         
        
      }
  } 
 
- @media only screen and (max-width: 600px) { 
+ @media only screen and (max-width: 800px) { 
     
     #about-content { 
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         margin: 0 auto;
         
-     
-       
-     }
+    }
  }  
 
- @media only screen and (max-width: 600px) { 
-    
-   .about-content {
-       width: 100%;
 
-
-       
-        
-     
-       
-     }
- }
-
-  @media only screen and (max-width: 767px) { 
+ 
+  @media only screen and (max-width: 800px) { 
     
     .footer-container { 
         display: flex;
@@ -1085,7 +1029,7 @@ input[type=submit]:hover {
 
 
 
- @media only screen and (max-width: 767px) { 
+ @media only screen and (max-width: 800px) { 
     
     .footer-content,.footer-content-item, #footer-content-item{ 
         display: flex;
@@ -1100,7 +1044,7 @@ input[type=submit]:hover {
 } 
 
 
- @media only screen and (max-width: 767px) { 
+ @media only screen and (max-width: 800px) { 
     
      #footer-content-item { 
         max-width: 100%;
@@ -1108,13 +1052,11 @@ input[type=submit]:hover {
         border-style: none;
         border-top: 2px solid white ;
         padding: 1rem;
-      
-       
-       
+          
      }
  }
  
- @media only screen and (max-width: 767px) { 
+ @media only screen and (max-width: 800px) { 
     
     .nav-container { 
        display: none;
@@ -1123,7 +1065,7 @@ input[type=submit]:hover {
     }
 } 
  
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 800px) {
     .contact-container{
         width: 90%;
         margin: 0 auto;
@@ -1132,7 +1074,7 @@ input[type=submit]:hover {
     
   }
   
- @media screen and (min-width: 657px) {
+ @media screen and (min-width: 800px) {
     .hamburger-icon{
        display: none;
 
@@ -1140,7 +1082,17 @@ input[type=submit]:hover {
     
   }
 
-  @media screen and (max-width: 657px) {
+@media screen and (min-width: 800px) {
+    .mobile-logo{
+       display: none;
+
+    }
+    
+  }
+
+
+
+@media screen and (max-width: 800px) {
     .prev, .next, .dot{
        display: none;
 
@@ -1148,9 +1100,13 @@ input[type=submit]:hover {
     
   }
 
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
+@media screen and (max-width: 800px) {
+     h1 {
+       display: none;
+
     }
+    
   }
+
+
  
