@@ -1,1034 +1,874 @@
-  body {
-    display: grid;
-    background-color: black;
-    background-image: url("/images/desktop/background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    height: auto;
+body {
+  display: grid;
+  background-color: black;
+  background-image: url("/images/desktop/background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  height: auto;
 }
 
 h1 {
-    display: flex;
-    padding-left: 20px;
-    font-family: 'Mr Dafoe';
-    font-size: 40px;
-    color: white;
-
+  display: flex;
+  padding-left: 20px;
+  font-family: "Mr Dafoe";
+  font-size: 40px;
+  color: white;
 }
-
-
 
 #h2 {
-     font-family: 'Mr Dafoe';
-    font-size: 35px;
+  font-family: "Mr Dafoe";
+  font-size: 35px;
 }
-h2{
-    font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+h2 {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-p{
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .mobile-logo {
-    position: fixed; 
-    top: 0;
-    right: 0;
-    background-color: black;
-    margin: 0 auto;
-    width: 20%;
-    height: auto;
-    transition: 0,4s;
-    margin: 1rem;
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  margin: 0 auto;
+  width: 20%;
+  height: auto;
+  transition: 0, 4s;
+  margin: 1rem;
 }
 
 .nav-container {
-    border: 2px solid white;
-    background-color:  rgba(15, 6, 6, 0.5) ;
+  border: 2px solid white;
+  background-color: rgba(15, 6, 6, 0.5);
 }
 
 .main-nav-list {
-    font-size: 1,5rem;
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
+  font-size: 1, 5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
 }
 
 .main-nav-item {
-    Padding: 0 2rem ; 
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 10%;
-    border-bottom: 10px solid rgba(194, 49, 49, 0.3) ;
-    
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10%;
+  border-bottom: 10px solid rgba(194, 49, 49, 0.3);
 }
 
 .hamburger-icon {
-    display: inline-block;
-    cursor: pointer;
-
+  display: inline-block;
+  cursor: pointer;
 }
 
-.bar1, .bar2, .bar3  {
-    background-color: white;
-    width: 25px;
-    min-height: 3px;
-    margin: 5px 0;
+.bar1,
+.bar2,
+.bar3 {
+  background-color: white;
+  width: 25px;
+  min-height: 3px;
+  margin: 5px 0;
 }
-
 
 .overlay-mobile {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; 
-    transition: 0.5s;
-  }
-  
- 
-  .overlay-mobile-content {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 0 auto;
-    width: 100%; 
-    text-align: center; 
-    
-  }
-  
-  .overlay-mobile a {
-    padding: 8px;
-    text-decoration: none;
-    margin: 0 auto;
-    font-size: 36px;
-    font-family: 'Mr Dafoe';
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-  .overlay-mobile a:hover, .overlay-mobile a:focus {
-    color: rgba(194, 49, 49);
-  
-  }
-  
-  .overlay-mobile .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 50px;
-  }
-  
+.overlay-mobile-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay-mobile a {
+  padding: 8px;
+  text-decoration: none;
+  margin: 0 auto;
+  font-size: 36px;
+  font-family: "Mr Dafoe";
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-mobile a:hover,
+.overlay-mobile a:focus {
+  color: rgba(194, 49, 49);
+}
+
+.overlay-mobile .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+}
 
 .logo {
-    width: 40%;
-    max-width: 300px;
-    min-width: 150px;
-    padding: 1rem;
-    
+  width: 40%;
+  max-width: 300px;
+  min-width: 150px;
+  padding: 1rem;
 }
 
 .row {
-    display: flex;
-    padding-bottom: 40px;
-   
+  display: flex;
+  padding-bottom: 40px;
 }
 
 ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: rgba(15, 6, 6, 0.5) ;
-    color: white;
- 
+  padding: 10px 16px;
+  list-style: none;
+  background-color: rgba(15, 6, 6, 0.5);
+  color: white;
 }
 
 ul.breadcrumb li {
-    display: inline;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-
+  display: inline;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: white;
-    content: "/\00a0";
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
 }
 
 ul.breadcrumb li a {
-    color: white;
-    text-decoration: none;
- }
+  color: white;
+  text-decoration: none;
+}
 
- ul.breadcrumb li a:hover {
-    color: rgba(194, 49, 49) ;
-    text-decoration: none;
-  }
-
+ul.breadcrumb li a:hover {
+  color: rgba(194, 49, 49);
+  text-decoration: none;
+}
 
 a:link {
-    color:white;
-    text-decoration: none;
-  }
-  
+  color: white;
+  text-decoration: none;
+}
 
 a:visited {
-    color: white;
-  }
-  
- 
+  color: white;
+}
+
 a:hover {
-    color: #c23131;
-  }
-  
+  color: #c23131;
+}
 
 a:active {
-    color: rgba(194, 49, 49);
+  color: rgba(194, 49, 49);
 }
 
 .intro {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 50%;
-    background-color:  rgba(15, 6, 6, 0.7);
-    margin: 0 auto;  
-    animation-name: fade;
-    animation-duration: 1.5s;
-    padding: 6rem;
-    gap: 50px;
-    
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(15, 6, 6, 0.7);
+  margin: 0 auto;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  padding: 6rem;
+  gap: 50px;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-    
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .intro-text {
-    color: white; 
-    font-size: 20px;
-    text-align: center;
-    padding: 0 4rem;
-    
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 4rem;
 }
 
 /* Button */
 
 .cta {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
 }
 
 #cta-button {
-    background-color: white;
-    color: rgba(194, 49, 49);
-    padding: 0 2rem;
-    border-radius: 30px;
-    font-size: 2rem;
-    font-family: 'Mr Dafoe';
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin: 0 auto;
-    border: 2px solid white;
-    margin-bottom: 2rem;
-} 
+  background-color: white;
+  color: rgba(194, 49, 49);
+  padding: 0 2rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-family: "Mr Dafoe";
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid white;
+  margin-bottom: 2rem;
+}
 
 #cta-button:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .refresh-button {
-    display: flex;
-    margin: 0 auto;
-    padding: 3rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 3rem;
 }
 
 .submit-button {
-    display: flex;
-    padding-top: 1rem;
-    background-color: white;
-    color: rgba(194, 49, 49);
-    padding: 0 2rem;
-    border-radius: 30px;
-    font-size: 2rem;
-    font-family: 'Mr Dafoe';
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+  display: flex;
+  padding-top: 1rem;
+  background-color: white;
+  color: rgba(194, 49, 49);
+  padding: 0 2rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-family: "Mr Dafoe";
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .submit-button:hover {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 /* LInks */
 
 .blogg-links {
-    display: flex;
-    color: white;
-
+  display: flex;
+  color: white;
 }
 
 /* Footer */
 
 .footer-container {
-    background-color: black;
-    width: 100%;
-    height: auto;
-    color: white;    animation-name: fade;
-    animation-duration: 1.5s;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  color: white;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .footer-content {
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   margin: 0 auto;
-   border-top: 2px solid white;
-   list-style: none;
- 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 2px solid white;
+  list-style: none;
 }
 
 #footer-content-item {
-    font-family: 'Mr Dafoe', cursive;
-    flex-wrap: wrap;
-    font-size: 2rem;
-    padding: 3rem;
-    text-decoration: none;
-    border-left: 2px solid white;
-    margin: 0 auto;
-    
-
+  font-family: "Mr Dafoe", cursive;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  padding: 3rem;
+  text-decoration: none;
+  border-left: 2px solid white;
+  margin: 0 auto;
 }
 
 .footer-content-item {
-    font-family: 'Mr Dafoe', cursive;
-    font-size: 2rem;
-    flex-wrap: wrap;
-    padding: 3rem;
-    text-decoration: none;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
-    
+  font-family: "Mr Dafoe", cursive;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 }
 
 #logo {
-    font-family: 'Mr Dafoe';
-    font-size: 25px;
+  font-family: "Mr Dafoe";
+  font-size: 25px;
 }
 
 .search {
-    display: flex;
-    justify-content: space-between;
-    gap:30px;
-    flex-wrap: wrap;
-    position: relative;
-    width: 150px;
-    max-height: 20px;;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin: 0 auto;
-    border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 150px;
+  max-height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid white;
 }
 
 /* Blog api*/
 
 #blog-header {
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    width: 20%;
-    color: white;
-    font-size: 3rem;
-    background-color: rgba(15, 6, 6, 0.5)
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 20%;
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(15, 6, 6, 0.5);
 }
-
 
 #blog-container {
-    display: flex;
-    flex-direction:inherit;
-    flex-wrap: wrap;
-    width: 90%;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-    gap: 20px;
-    background-color: black;
-    padding: 1rem;
-    margin-top: 60px;
-    margin-bottom: 3rem;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  display: flex;
+  flex-direction: inherit;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  gap: 20px;
+  background-color: black;
+  padding: 1rem;
+  margin-top: 60px;
+  margin-bottom: 3rem;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-
-
-
-.blog-content {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    border: 2px solid white;
-    opacity: 1.0;
-   
-    
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 2px solid white;
+  opacity: 1;
+}
 
 .image {
-    width: 100%;
-    height: auto;
-
+  width: 100%;
+  height: auto;
 }
 
 .title {
-    display: flex;
-    position: relative;
-    color: white;
-    margin: 0 auto;
-    
+  display: flex;
+  position: relative;
+  color: white;
+  margin: 0 auto;
 }
 
-.blog-card{
-    border: 3px solid white;
-    opacity: 1.0;
-    gap: 20px;
-
+.blog-card {
+  border: 3px solid white;
+  opacity: 1;
+  gap: 20px;
 }
 
 .blog-card:hover {
-    opacity: 0.5;
-
+  opacity: 0.5;
 }
 
 .blog-card::after {
-    opacity: 1.0;
-
+  opacity: 1;
 }
-
 
 /* Blog */
 
 .blog-container {
-    color: white;
-    width: 90%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction:inherit;
-    gap: 20px;
-    background-color: black;
-    padding: 1rem;
-    margin-top: 60px;
-    gap: 30px;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  color: white;
+  width: 90%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: inherit;
+  gap: 20px;
+  background-color: black;
+  padding: 1rem;
+  margin-top: 60px;
+  gap: 30px;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .blog-content:hover {
-    opacity: 0.5;
-
+  opacity: 0.5;
 }
 
 .blog-content::after {
-    opacity: 1.0;
-
+  opacity: 1;
 }
-
-.slideshow-container {
-    color: white;
-    width: 100%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    margin: auto;
-    display: flex;
-    gap: 20px;
-    background-color: black;
-    padding: 1rem;
-    padding-top: 80px;
-   
-}
-
-.mySlides fade {
-    display: none;
-}
-
-.mySlides {
-    height: auto;
-
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: relative;
-    margin: 0 auto;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-   
-  }
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    display: none;
-    
-  }
-
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  
-   .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  
-} 
-
-
 
 #link {
-    color: rgba(194, 49, 49);
+  color: rgba(194, 49, 49);
 }
 
 #link:hover {
-    color: darkgrey;
-    transition-duration: 0.4s;
-    cursor: pointer;
-
+  color: darkgrey;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-
 
 /* Contact form*/
 
 .form-container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 3rem;
-    margin: 0 auto;
-    width: 60%;
-    margin-bottom: 3rem;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    box-sizing: border-box;
-   
-   
+  border-radius: 5px;
+  background-color: black;
+  padding: 3rem;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 3rem;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  box-sizing: border-box;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-  
-
-input[type=text], select, textarea, #email{
-    width: 80%; 
-    padding: 12px;  
-    border: 1px solid white;
-    margin: 1rem;
-    resize: vertical; 
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}
+
+input[type="text"],
+select,
+textarea,
+#email {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid white;
+  margin: 1rem;
+  resize: vertical;
+}
 
 .contact-container {
-    display: flex;
-    flex-direction: row;
-    background-color:  rgba(15, 6, 6, 0.7);
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(15, 6, 6, 0.7);
 }
 
 .container-items {
-    color:white;
-    align-items: flex-end;
-    
+  color: white;
+  align-items: flex-end;
 }
 
 .contact {
-    justify-content: space-between;
-    color: white;
-    font-family: 'Mr Dafoe', cursive;
-    margin: 0 auto;
-    text-align: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Mr Dafoe", cursive;
+  margin: 0 auto;
+  text-align: center;
 }
 
-
-#name-error,#email-error ,#subject-error, #message-error {
-    color: red;
-    display: none;
+#name-error,
+#email-error,
+#subject-error,
+#message-error {
+  color: red;
 }
-
 
 .form-container span {
-    display: flex;
-    position: relative;
-    padding-left: 10%;
-    font-size: 14px;
-    
-
+  display: flex;
+  position: relative;
+  padding-left: 10%;
+  font-size: 14px;
 }
 
-.form-container i{
-    color: green;
-    display: flex;
-    position: relative;
-    padding-left: 10%;
-
+.form-container i {
+  color: green;
+  display: flex;
+  position: relative;
+  padding-left: 10%;
 }
 
 .loader {
-    border: 4px dotted #f3f3f3; 
-    border-top: 4 px slashed rgba(15, 6, 6, 0.7) ;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-  }
-  
- @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(180deg); }
-  }
+  border: 4px dotted #f3f3f3;
+  border-top: 4 px slashed rgba(15, 6, 6, 0.7);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
 
- .about-item-container {
-    display: flex;
-    background-color: black;
-    padding-bottom: 5rem;
-    animation-name: fade;
-    animation-duration: 1.5s;
-} 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.about-item-container {
+  display: flex;
+  background-color: black;
+  padding-bottom: 5rem;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
 .about-content {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 50%;
-    height: auto;
-    padding: 2 6rem;
-    padding: 2rem;
-    font-family: 'Mr Dafoe';
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 50%;
+  height: auto;
+  padding: 2 6rem;
+  padding: 2rem;
+  font-family: "Mr Dafoe";
 }
 
 #about-content {
-    flex-wrap: wrap;
-    border: 3px solid white;
-    width: 50%;
-    height: auto;
-    
+  flex-wrap: wrap;
+  border: 3px solid white;
+  width: 50%;
+  height: auto;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Blog page */
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 1rem;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: 0.0} 
-    to {opacity: 1}
-  
-} 
-
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .card-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding:  1rem;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-decoration: none;
-    width: 80%;
-    text-decoration: none;
-
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: none;
+  width: 80%;
+  text-decoration: none;
 }
 
 .card-image {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
 }
 
 .card-text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .card-title {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Mr Dafoe';
-    font-size: 3rem;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Mr Dafoe";
+  font-size: 3rem;
+  margin: 0 auto;
 }
 
 .menu {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .name {
-    font-size: 16px;
-    margin-bottom: 0.75rem;
-    color: var(--grey);
-    font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+  color: var(--grey);
+  font-weight: bold;
 }
 
 .image {
-    height: 150px;
-    background-size: cover;
-    background-position: center top;
+  height: 150px;
+  background-size: cover;
+  background-position: center top;
 }
 
-
 .thank-you-container {
-    display: flex;
-    animation-name: fade;
-    animation-duration: 1.5s;
-
+  display: flex;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .thank-you-content {
-    width: 60%;
-    max-width: 650px;
-    border: 2px solid white;
-    background-color: black;
-    padding: 2rem;
-    margin: 0 auto;
-    color: white;
-    text-align: center;
-    margin-bottom: 3rem;
+  width: 60%;
+  max-width: 650px;
+  border: 2px solid white;
+  background-color: black;
+  padding: 2rem;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-
-@media only screen and (max-width: 767px) { body 
-    {  background-image: url(/images/mobile/background-mobile.jpg); }
- }
-
- @media screen and (max-width: 800px) {
-    .overlay-mobile .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(/images/mobile/background-mobile.jpg);
   }
+}
 
-
-  @media screen and (min-width: 800px) {
-    .overlay-mobile {
-        display: none;
-    }  
-   
-    
+@media screen and (max-width: 800px) {
+  .overlay-mobile .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-
-  @media screen and (max-width: 800px) {
-    .intro {
-        width: 80%
-    }
-    
-  }
-
-  @media screen and (max-width: 800px) {
-      .blog-card {
-          flex: 40%;
-          max-width: 40%;
-          
-      }
-  }
- 
-
- @media only screen and (max-width: 800px) { 
-    
-    .blog-container { 
-        display: flex;
-        flex-direction: column;
-        flex-flow: flow-wrap;
-        max-width: 50%;
-        block-size: auto;
-        padding: 0rem;
-     }
- }
-
- @media only screen and (max-width: 800px) {
-    p {
-      font-size: 14px;
-    }
-  }
-
- @media only screen and (max-width: 800px) {
-     #cta-button, .submit-button {
-         font-size: 25px;
-         padding: 0 2rem;
-     }
-
-  }
-
-@media only screen and (max-width: 800px) {
-    .card-title{
-        font-size: 30px;
-     }
-} 
-
-@media only screen and (max-width: 800px) {
-    .card-content, .card-text, .card-image{
-        text-decoration: none;
-     }
-} 
-
-
- @media only screen and (max-width: 800px) { 
-    
-    .about-content  { 
-        max-width: 80%;
-        margin: 0 auto;
-        padding: 3rem;     
-    }
- }  
-
-
- @media only screen and (max-width: 800px) { 
-    
-    .about-item-container { 
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        max-width: 80%;
-        padding: 1rem;
-        margin: 0 auto;
-        background-color: white;
-        
-        
-       
-     }
- } 
-
- @media only screen and (max-width: 800px) { 
-    
-    #about-content { 
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        
-    }
- }  
-
-
- 
-  @media only screen and (max-width: 800px) { 
-    
-    .footer-container { 
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        margin: 0 auto;
-        border-color: #333;
-      
-       
-       
-     }
- }  
-
-
-
- @media only screen and (max-width: 800px) { 
-    
-    .footer-content,.footer-content-item, #footer-content-item{ 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0 auto;
-        border-style: none;
-        padding: 1rem;
-          
-     }
-} 
-
-
- @media only screen and (max-width: 800px) { 
-    
-     #footer-content-item { 
-        max-width: 100%;
-        margin: 0 auto;
-        border-style: none;
-        border-top: 2px solid white ;
-        padding: 1rem;
-          
-     }
- }
- 
- @media only screen and (max-width: 800px) { 
-    
-    .nav-container { 
-       display: none;
-      
-      
-    }
-} 
- 
-@media screen and (max-height: 800px) {
-    .contact-container{
-        width: 90%;
-        margin: 0 auto;
-
-    }
-    
-  }
-  
- @media screen and (min-width: 800px) {
-    .hamburger-icon{
-       display: none;
-
-    }
-    
-  }
+}
 
 @media screen and (min-width: 800px) {
-    .mobile-logo{
-       display: none;
-
-    }
-    
+  .overlay-mobile {
+    display: none;
   }
-
-
+}
 
 @media screen and (max-width: 800px) {
-    .prev, .next, .dot{
-       display: none;
-
-    }
-    
+  .intro {
+    width: 80%;
   }
+}
 
 @media screen and (max-width: 800px) {
-     h1 {
-       display: none;
-
-    }
-    
+  .blog-card {
+    flex: 40%;
+    max-width: 40%;
   }
+}
 
+@media only screen and (max-width: 800px) {
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: flow-wrap;
+    max-width: 50%;
+    block-size: auto;
+    padding: 0rem;
+  }
+}
 
- 
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #cta-button,
+  .submit-button {
+    font-size: 25px;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-content,
+  .card-text,
+  .card-image {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-item-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    max-width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    border-color: #333;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-content,
+  .footer-content-item,
+  #footer-content-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    border-style: none;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #footer-content-item {
+    max-width: 100%;
+    margin: 0 auto;
+    border-style: none;
+    border-top: 2px solid white;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .prev,
+  .next,
+  .dot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    display: none;
+  }
+}
