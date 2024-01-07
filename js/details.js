@@ -27,7 +27,7 @@ fetchDrink();
 function createHtml(details) {
   detailContainer.innerHTML = `<div class=card-content>
              <div class="card-title">${details.title.rendered}</div>
-                <div class="card-text">"${details.content.rendered}"</div>`;
+                <div class="card-text">${details.content.rendered}</div>`;
 }
 
 function showImage() {
