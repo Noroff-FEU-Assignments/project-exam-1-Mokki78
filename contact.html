@@ -82,19 +82,19 @@
       <div class="form-container">
         <div class="container-items"></div>
         <form action="" method="POST"></form>
-          <label for="name">Name</label>
-          <input type="text" name="fullname" placeholder="Your name" id="contact-name" onkeyup="validateName()">
+          <label class="labels"for="name">Name</label>
+          <input type="text" name="fullname" placeholder="Your name" id="contact-name" onkeyup="validateName()" required >
           <span id="name-error"></span>
-         <label for="email">Email</label>
-         <input type="email" name="Email" placeholder="Your email" id="email" onkeyup="validateEmail()" >
+         <label class="labels"for="email">Email</label>
+         <input type="email" name="Email" placeholder="Your email" id="email" onkeyup="validateEmail()"required >
          <span id="email-error"></span>
-         <label for="subject">Subject</label>
+         <label class="labels" for="subject">Subject</label>
           <textarea placeholder="Subject" style="height:30px" id="contact-subject"  onkeyup="validateSubject()" ></textarea>
           <span id="subject-error"></span>
-          <label for="message">Message</label>
-          <textarea name="message" placeholder="Write something.." style="height:100px" id="contact-message" onkeyup="validateMessage()"></textarea>
+          <label class="labels" for="message">Message</label>
+          <textarea name="message" placeholder="Write something.." style="height:100px" id="contact-message" onkeyup="validateMessage()" required></textarea>
           <span id="message-error"></span>
-          <input type="submit" a href="thank-you.html" value="Submit" class="submit-button" onclick="return validateForm()"></a>
+          <a href="thank-you.html" id="submit-button">Submit</a>
           <span id="submit-error"></span>
         </form>
         </div>
@@ -102,23 +102,39 @@
      </main>
      <div class="footer-container">
       <div class="footer-content">
-          <div class="footer-content-item">
-            <p class="favourite">Search for your favourite drink</p>
-              <div class="search"></div>
+        <div class="footer-content-item">
+          <div>
+          <label class="favourite">Sign up for our newsletter!</label>
+          <input class="sign-up" ></input>
+          <button class=sign-up-button>Sign up</button>
+        </div>
+        <div class="social-media">
+         <div>
+           <a href="#" i class="fa-brands fa-instagram"></i></a>
          </div>
-         <div id="footer-content-item">
+         <div>
+          <a href="#"i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href="#"i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+        </div>
+        <div id="footer-content-item">
+          <ul id="footer-menu">
             <li id="footer-item"><a href="about.html">About</a></li>
             <li id="footer-item"><a href="drinks.html">Drinks</a></li>
             <li id="footer-item"><a href="contact.html">Contact</a></li>
           </ul>
-     </div>
-     <div id="footer-content-item">
-      <a href="/index.html">
-         <p id="logo">DRinkiez</p>  <p>2022</p>
-        </a>
-       </div>
+        </div>
+        <div id="footer-content-item">
+          <a href="/index.html">
+            <p id="logo">DRinkiez @ 2022</p>
+       
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
    <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
   </body>

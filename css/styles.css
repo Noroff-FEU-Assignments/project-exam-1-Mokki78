@@ -53,23 +53,31 @@ img {
 
 .nav-container {
   border: 2px solid white;
+  display: flex;
+   justify-content: start;
+  align-items: center;
+  width: 100%;
   background-color: rgba(15, 6, 6, 0.5);
+
+}
+
+.logo-container {
+  margin-right: 0px;
 }
 
 .main-nav-list {
+  display: flex;
   font-size: 1, 5rem;
   text-decoration: none;
   color: white;
   font-family: "Poppins", sans-serif;
-  display: flex;
   list-style: none;
-  margin: 0 auto;
+  padding-left: 200px;
 }
 
 .main-nav-item {
   padding: 0 2rem;
   margin: 0 auto;
-  width: 100%;
   padding-top: 10%;
   border-bottom: 10px solid rgba(194, 49, 49, 0.3);
 }
@@ -140,11 +148,6 @@ img {
   padding: 1rem;
 }
 
-.row {
-  display: flex;
-  padding-bottom: 40px;
-}
-
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -201,6 +204,8 @@ a:active {
   animation-name: fade;
   animation-duration: 1.5s;
   padding: 6rem;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
   gap: 50px;
 }
 
@@ -253,8 +258,9 @@ a:active {
   padding: 3rem;
 }
 
-.submit-button {
-  display: flex;
+#submit-button {
+  display: grid;
+  justify-content: center;
   padding-top: 1rem;
   background-color: white;
   color: rgba(194, 49, 49);
@@ -269,9 +275,10 @@ a:active {
   margin-top: 3rem;
 }
 
-.submit-button:hover {
+#submit-button:hover {
   color: white;
   background-color: black;
+  border: 1px solid white;
 }
 
 /* LInks */
@@ -302,54 +309,77 @@ a:active {
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
   width: 100%;
-  margin: 0 auto;
   border-top: 2px solid white;
-  list-style: none;
-}
+ }
 
 #footer-content-item {
-  font-family: "Mr Dafoe", cursive;
-  flex-wrap: wrap;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  padding: 3rem;
-  text-decoration: none;
+  padding: 1rem;
   border-left: 2px solid white;
-  margin: 0 auto;
+  
+}
+
+#footer-menu {
+  list-style: none;
+  text-decoration: none;
 }
 
 .footer-content-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: "Mr Dafoe", cursive;
   font-size: 2rem;
-  flex-wrap: wrap;
   padding: 3rem;
   text-decoration: none;
+}
+
+.social-media {
+  display: inline-grid;
+  grid-template-columns: 1fr 1 fr 1fr;
+  grid-auto-flow: column; 
+  place-items: center; 
+}
+
+.sign-up {
+  width: 300px;
+  background-color: white;
+  height: 30px;
+  outline: none;
+ 
+}
+
+.sign-up-button {
+  padding-top: 1rem;
+  background-color: white;
+  color: rgba(194, 49, 49);
+  padding: 0 2rem;
+  border-radius: 30px;
+  font-size: 25px;
+  font-family: "Mr Dafoe";
+  transition-duration: 0.4s;
+  cursor: pointer;
   margin: 0 auto;
-  display: flex;
-  position: relative;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.sign-up-button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 
 #logo {
   font-family: "Mr Dafoe";
   font-size: 25px;
-}
-
-.search {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 150px;
-  max-height: 20px;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin: 0 auto;
-  border: 2px solid white;
 }
 
 /* Blog api*/
@@ -368,7 +398,7 @@ a:active {
   display: flex;
   flex-direction: inherit;
   flex-wrap: wrap;
-  width: 90%;
+  width: 30%;
   height: auto;
   position: relative;
   margin: 0 auto;
@@ -393,7 +423,7 @@ a:active {
 .blog-content {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 90%;
   height: auto;
   flex-wrap: wrap;
   max-width: 100%;
@@ -499,6 +529,10 @@ a:active {
   }
 }
 
+.labels {
+  color: white;
+}
+
 input[type="text"],
 select,
 textarea,
@@ -508,6 +542,7 @@ textarea,
   border: 1px solid white;
   margin: 1rem;
   resize: vertical;
+  outline: none;
 }
 
 .contact-container {
@@ -519,6 +554,7 @@ textarea,
 .container-items {
   color: white;
   align-items: flex-end;
+  
 }
 
 .contact {
@@ -541,6 +577,7 @@ textarea,
   position: relative;
   padding-left: 10%;
   font-size: 14px;
+  outline: none;
 }
 
 .form-container i {
@@ -571,9 +608,9 @@ textarea,
 .about-item-container {
   display: flex;
   background-color: black;
-  padding-bottom: 5rem;
   animation-name: fade;
   animation-duration: 1.5s;
+ 
 }
 
 .about-content {
@@ -582,9 +619,9 @@ textarea,
   background-color: white;
   width: 50%;
   height: auto;
-  padding: 2 6rem;
-  padding: 2rem;
-  font-family: "Mr Dafoe";
+ font-family: "Mr Dafoe";
+ padding: 30px;
+
 }
 
 #about-content {
@@ -592,6 +629,8 @@ textarea,
   border: 3px solid white;
   width: 50%;
   height: auto;
+  padding-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 @keyframes fade {
@@ -612,7 +651,9 @@ textarea,
   background-color: white;
   width: 60%;
   height: auto;
+  padding-bottom: 60px;
   margin: 0 auto;
+  margin-bottom: 60px;
   border-radius: 1rem;
   animation-name: fade;
   animation-duration: 1.5s;
@@ -627,18 +668,6 @@ textarea,
   }
 }
 
-.card-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  text-decoration: none;
-  width: 80%;
-  text-decoration: none;
-}
 
 .card-image {
   display: flex;
@@ -650,9 +679,26 @@ textarea,
 
 .card-text {
   font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+  list-style-type: style square;
+  padding: 20px;
+}
+
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   text-decoration: none;
+  width: 80%;
+  list-style: none;
+  
 }
+
 
 .card-title {
   display: flex;
@@ -660,12 +706,10 @@ textarea,
   font-family: "Mr Dafoe";
   font-size: 3rem;
   margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
 }
 
-.menu {
-  display: flex;
-  width: 100%;
-}
 
 .name {
   font-size: 16px;
@@ -680,6 +724,8 @@ textarea,
   background-position: center top;
 }
 
+
+
 .thank-you-container {
   display: flex;
   animation-name: fade;
@@ -691,11 +737,12 @@ textarea,
   max-width: 650px;
   border: 2px solid white;
   background-color: black;
-  padding: 2rem;
+  padding: 3rem;
   margin: 0 auto;
   color: white;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -721,6 +768,7 @@ textarea,
 @media screen and (max-width: 800px) {
   .intro {
     width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -733,12 +781,16 @@ textarea,
 
 @media only screen and (max-width: 800px) {
   .blog-container {
-    display: flex;
-    flex-direction: column;
-    flex-flow: flow-wrap;
-    max-width: 50%;
-    block-size: auto;
-    padding: 0rem;
+   display: grid;
+   grid-template-columns: 4fr;
+   width: 90%;
+ }
+}
+
+@media only screen and (max-width: 800px) {
+  #blog-container {
+   display: grid;
+    width: 100%;
   }
 }
 
@@ -751,7 +803,7 @@ textarea,
 @media only screen and (max-width: 800px) {
   #cta-button,
   .submit-button {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0 2rem;
   }
 }
@@ -771,32 +823,28 @@ textarea,
 }
 
 @media only screen and (max-width: 800px) {
-  .about-content {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 3rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
   .about-item-container {
     display: flex;
-    flex-direction: column-reverse;
     flex-wrap: wrap;
-    max-width: 80%;
-    padding: 1rem;
+     padding: 20px;
     margin: 0 auto;
     background-color: white;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .about-content {
+   margin: 0 auto;
+   width: 80%;
+   
+  }
+}
+
+@media only screen and (max-width: 800px) {
   #about-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
     height: auto;
     margin: 0 auto;
+    width: 90%;
   }
 }
 
@@ -812,25 +860,26 @@ textarea,
 
 @media only screen and (max-width: 800px) {
   .footer-content,
-  .footer-content-item,
-  #footer-content-item {
+  .footer-content-item
+ {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 100%;
+    margin: 40px;
+    max-width: 80%;
     margin: 0 auto;
     border-style: none;
     padding: 1rem;
+    font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 800px) {
   #footer-content-item {
-    max-width: 100%;
-    margin: 0 auto;
-    border-style: none;
+   border-style: none;
     border-top: 2px solid white;
     padding: 1rem;
+    
   }
 }
 
@@ -870,5 +919,27 @@ textarea,
 @media screen and (max-width: 800px) {
   h1 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    padding: 30px;
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+     width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+     padding: 1rem;
+     margin-top: 30px;
+     margin-bottom: 30px;
   }
 }
